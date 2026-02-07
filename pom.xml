@@ -28,6 +28,17 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>http://13.205.1.139:8081/repository/hello-world-java/</url>
+		</repository>
+		<snapshotrepository> 
+			<id>nexus</id>
+		    <url>http://13.205.1.139:8081/repository/hello-world-java-snapshot/</url>
+		</snapshotrepository>
+	</distributionManagement>
+		
 	<build>
 		<plugins>
 			<plugin>
